@@ -71,3 +71,5 @@ final GoRouter _router = GoRouter(
     // TODO : Route -
   ],
 );
+
+GoRouter get router => _router;
