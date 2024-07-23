@@ -23,4 +23,15 @@ class R {
   /// [preview] (E://App/fashion_app/assets/images/)
   static const String ASSETS_IMAGES_GET_STARTED_PNG =
       'assets/images/getstarted.png';
+
+  /// [preview] (E://App/fashion_app/assets/images/)
+  static const String ASSETS_IMAGES_PLACEHOLDER_PNG =
+      'assets/images/placeholder.webp';
+
+  /// [preview] (E://App/fashion_app/assets/images/)
+  static const String ASSETS_IMAGES_SPLASHSCREEN_PNG =
+      'assets/images/splashscreen.png';
+
+  /// [preview] (E://App/fashion_app/assets/images/)
+  static const String ASSETS_IMAGES_WISHLIST_PNG = 'assets/images/wishlist.png';
 }
