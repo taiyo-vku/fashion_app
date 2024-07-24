@@ -8,6 +8,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
+import '../../../common/widgets/custom_button.dart';
+
 class HomeSlider extends StatelessWidget {
   const HomeSlider({super.key});
 
@@ -36,29 +38,30 @@ class HomeSlider extends StatelessWidget {
             ),
           ),
           Positioned(
-            width: ScreenUtil().screenWidth,
-            height: ScreenUtil().screenHeight * 0.16,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ReusableText(
-                    text: AppText.kCollection,
-                    style: appStyle(20, Kolors.kDark, FontWeight.w600),
-                  ),
-                  SizedBox(height: 5.h),
-                  Text(
-                    'Discount 50% off \nthe firest transaction.',
-                    style: appStyle(
-                        14, Kolors.kDark.withOpacity(0.5), FontWeight.normal),
-                  ),
-
-                  SizedBox(height: 10.h),
-
-                  
-                ],
+            child: SizedBox(
+              width: ScreenUtil().screenWidth,
+              height: ScreenUtil().screenHeight * 0.16,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ReusableText(
+                      text: AppText.kCollection,
+                      style: appStyle(20, Kolors.kDark, FontWeight.w600),
+                    ),
+                    Text(
+                      'Discount 50% off \nthe firest transaction.',
+                      style: appStyle(
+                          14, Kolors.kDark.withOpacity(0.5), FontWeight.normal),
+                    ),
+                    GradientBtn(
+                      text: 'Shop Now',
+                      btnWidth: 150.w,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
