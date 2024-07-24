@@ -15,7 +15,7 @@ class R {
 
   /// [preview] (E://App/fashion_app/assets/images/)
   static const String ASSETS_IMAGES_EXPERIENCE_PNG =
-      'assets/imags/experience.png';
+      'assets/images/experience.png';
 
   /// [preview] (E://App/fashion_app/assets/images/)
   static const String ASSETS_IMAGES_FAILED_PNG = 'assets/images/failed.png';
