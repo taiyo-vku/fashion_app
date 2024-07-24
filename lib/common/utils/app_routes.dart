@@ -1,4 +1,5 @@
 import 'package:fashion_app/src/auth/views/login_screen.dart';
+import 'package:fashion_app/src/categories/views/categories_screen.dart';
 import 'package:fashion_app/src/entrypoint/views/entrypoint.dart';
 import 'package:fashion_app/src/notification/views/notification_screen.dart';
 import 'package:fashion_app/src/onboarding/views/onboarding_screen.dart';
@@ -50,10 +51,10 @@ final GoRouter _router = GoRouter(
       builder: (context, state) => const SearchPage(),
     ),
 
-    // TODO : Route -
+    // TODO : Route - Categories Screen
     GoRoute(
-      path: '/',
-      builder: (context, state) => const SplashScreen(),
+      path: '/categories',
+      builder: (context, state) => const CategoriesPage(),
     ),
 
     // TODO : Route -
