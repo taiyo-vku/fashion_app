@@ -21,7 +21,7 @@ final GoRouter _router = GoRouter(
     // TODO : Route - App EntryPoint
     GoRoute(
       path: '/home',
-      builder: (context, state) => const AppEntryPoint(),
+      builder: (context, state) => AppEntryPoint(),
     ),
 
     // TODO : Route - Onboarding

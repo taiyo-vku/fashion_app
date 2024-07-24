@@ -1,6 +1,7 @@
 import 'package:fashion_app/common/utils/app_routes.dart';
 import 'package:fashion_app/common/utils/environment.dart';
 import 'package:fashion_app/common/utils/kstring.dart';
+import 'package:fashion_app/src/entrypoint/controllers/bottom_tab_notifier.dart';
 import 'package:fashion_app/src/onboarding/controllers/onboarding_notifier.dart';
 import 'package:fashion_app/src/splashscreen/views/splashscreen_page.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,10 @@ void main() async {
   await GetStorage.init();
 
   runApp(MultiProvider(
-    providers: [ChangeNotifierProvider(create: (_) => OnboardingNotifier())],
+    providers: [
+      ChangeNotifierProvider(create: (_) => OnboardingNotifier()),
+      ChangeNotifierProvider(create: (_) => TabIndexNotifier()),
+    ],
     child: const MyApp(),
   ));
 }
