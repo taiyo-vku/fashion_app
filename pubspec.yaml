@@ -53,6 +53,7 @@ dependencies:
   provider: ^6.1.2
   # TODO : Slider
   flutter_image_slider: ^0.0.2
+  flutter_image_slideshow: ^0.1.6
   # TODO : Image
   cached_network_image: ^3.3.1
   flutter_svg: ^2.0.10+1

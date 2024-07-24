@@ -1,4 +1,5 @@
 import 'package:fashion_app/common/utils/kcolors.dart';
+import 'package:fashion_app/constants/resource.dart';
 import 'package:flutter/material.dart';
 
 // TODO : kGradient
@@ -50,13 +51,13 @@ BorderRadiusGeometry kRadiusBottom = const BorderRadius.only(
 
 // TODO :  Widget Function : placeholder
 Widget Function(BuildContext, String)? placeholder = (p0, p1) => Image.asset(
-      'assets/images/placeholder.webp',
+      R.ASSETS_IMAGES_PLACEHOLDER_PNG,
       fit: BoxFit.cover,
     );
 
 // TODO :  Widget Function : errorWidget
 Widget Function(BuildContext, String, Object)? errorWidget =
     (p0, p1, p2) => Image.asset(
-          'assets/images/placeholder.webp',
+          R.ASSETS_IMAGES_PLACEHOLDER_PNG,
           fit: BoxFit.cover,
         );
